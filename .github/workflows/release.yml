@@ -45,7 +45,7 @@ jobs:
             type=semver,pattern=v{{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=raw,value=latest
-            type=raw,value=metabase-clickhouse-{{version}}
+            type=semver,pattern=metabase-clickhouse-{{version}}
 
       - name: Build and push Docker image
         id: push
