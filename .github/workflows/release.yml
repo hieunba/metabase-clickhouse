@@ -45,7 +45,7 @@ jobs:
             type=semver,pattern=v{{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=raw,value=latest
-            type=match,pattern=metabase-v*
+            type=raw
 
       - name: Build and push Docker image
         id: push
